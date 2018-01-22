@@ -27,6 +27,8 @@ public class directDevice {
 		
 		AndroidDriver driver = new AndroidDriver(new URL("http://127.0.0.1:4723/wd/hub"),cb);
 		
+		System.out.println("Installing the app on Emulator");
+		
 	}
 
 }

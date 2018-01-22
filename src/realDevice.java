@@ -25,6 +25,8 @@ public class realDevice {
 		cb.setCapability(AndroidMobileCapabilityType.APP_PACKAGE, "com.poqstudio.app.platform.boohoo");
 		
 		AndroidDriver driver = new AndroidDriver(new URL("http://127.0.0.1:4723/wd/hub"),cb);
+		
+		System.out.println("Plug in your android device and work on the app");
 
 	}
 

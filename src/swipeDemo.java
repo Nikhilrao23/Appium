@@ -21,6 +21,7 @@ public class swipeDemo extends base{
 		
 		action.press(driver.findElementByXPath("//*[@content-desc = '15']")).waitAction(2000).moveTo(driver.findElementByXPath("//*[@content-desc = '45']")).perform();
 		
+		System.out.println("Swipe Demo on setting time as 9:45");
 	}
 }
 /*
