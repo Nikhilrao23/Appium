@@ -16,4 +16,4 @@ public class ScrollingDemo extends base {
 /*
 1. Go to Views - Use Xpath
 2. Use AndroidUIAutomator and UiScrollable and Selector to find the text to which you would want to scroll till then
-*/
+*/	

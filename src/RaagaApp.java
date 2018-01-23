@@ -9,24 +9,27 @@ import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.AndroidElement;
 import io.appium.java_client.remote.AndroidMobileCapabilityType;
 import io.appium.java_client.remote.MobileCapabilityType;
+import io.appium.java_client.remote.MobilePlatform;
 
-public class base {
+public class RaagaApp {
+
 	public static AndroidDriver<AndroidElement> Capabilities() throws MalformedURLException {
-		
+		// TODO Auto-generated method stub
 		
 		File f = new File("src");
-		// File fs = new File(f, "ApiDemos-debug.apk");
-		
 		
 		DesiredCapabilities cb = new DesiredCapabilities();
-		
+	
 		cb.setCapability(MobileCapabilityType.DEVICE_NAME, "Nexus");
-		cb.setCapability(MobileCapabilityType.PLATFORM_NAME, "Android");
+		cb.setCapability(MobileCapabilityType.PLATFORM_NAME, MobilePlatform.ANDROID);
 		cb.setCapability(AndroidMobileCapabilityType.APP_ACTIVITY, "com.gaana.GaanaActivity");
-		cb.setCapability(AndroidMobileCapabilityType.APP_PACKAGE, "com.gaanas");
+		cb.setCapability(AndroidMobileCapabilityType.APP_PACKAGE, "com.gaana");
 		
-		AndroidDriver<AndroidElement> driver = new AndroidDriver<>(new URL("http://127.0.0.1:4723/wd/hub"),cb);
+		AndroidDriver driver = new AndroidDriver (new URL("http://127.0.0.1:4723/wd/hub"),cb);
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		return driver;
+		
+
 	}
+
 }
