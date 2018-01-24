@@ -61,6 +61,10 @@ public class raagaLogin extends RaagaBase {
 		
 		System.out.println(driver.findElement(By.id("com.raaga.android:id/menu_username_tv")).getText());
 		
+		System.out.println("Successfully Tried login on Raaga Music app");
+
+
+		
 
 	}
 
