@@ -2,6 +2,7 @@ import java.net.MalformedURLException;
 
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.AndroidElement;
+// import io.appium.java_client.android.AndroidKeyCode;
 
 public class installApp extends googlePlayBase {
 
@@ -23,6 +24,12 @@ public class installApp extends googlePlayBase {
 		
 		driver.findElementByXPath("//android.widget.Button[@text = 'OPEN']").click();
 		
-	}
+		// driver.pressKeyCode(AndroidKeyCode.HOME);
+		
+		driver.removeApp("com.lingodeer");
+		// Uninstall the apps
+		
+		
+	} 
 
 }
