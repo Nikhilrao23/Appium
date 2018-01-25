@@ -21,8 +21,9 @@ public class realDevice {
 		DesiredCapabilities cb = new DesiredCapabilities();
 		cb.setCapability(MobileCapabilityType.PLATFORM_NAME,MobilePlatform.ANDROID);
 		cb.setCapability(MobileCapabilityType.DEVICE_NAME, "Android device");
-		cb.setCapability(AndroidMobileCapabilityType.APP_ACTIVITY, "com.gpshopper.cpa.MainActivity");
-		cb.setCapability(AndroidMobileCapabilityType.APP_PACKAGE, "com.poqstudio.app.platform.boohoo");
+		// Mention the Device name as Android Device( Most Important)
+		cb.setCapability(AndroidMobileCapabilityType.APP_ACTIVITY, "");
+		cb.setCapability(AndroidMobileCapabilityType.APP_PACKAGE, "");
 		
 		AndroidDriver driver = new AndroidDriver(new URL("http://127.0.0.1:4723/wd/hub"),cb);
 		
